@@ -1,0 +1,40 @@
+body {
+  font-weight: $font-rg;
+  line-height: 1.625rem;
+}
+
+h1 {
+  font-weight: $font-md;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  @media screen and (min-width: $screen-tablet) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
+
+h2 {
+  font-weight: $font-md;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: 1.4px;
+  @media screen and (min-width: $screen-tablet) {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: 2px;
+  }
+}
+
+h3 {
+  font-weight: $font-md;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  letter-spacing: 5px;
+}
+
+.text--white {
+  color: $color-white;
+}
+.text-black {
+  color: $color-dark-grey;
+}
