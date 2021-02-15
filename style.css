@@ -83,7 +83,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
 }
@@ -103,11 +102,6 @@ section {
   display: block;
 }
 
-body {
-  line-height: 1.625rem;
-  font-family: 'Jost', sans-serif;
-}
-
 ol,
 ul {
   list-style: none;
@@ -119,12 +113,12 @@ q {
 }
 
 blockquote:before, blockquote:after {
-  content: '';
+  content: "";
   content: none;
 }
 
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -133,7 +127,30 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 body {
+  font-family: "Jost", sans-serif;
   font-weight: 400;
   line-height: 1.625rem;
 }
@@ -143,7 +160,6 @@ h1 {
   font-size: 2rem;
   line-height: 2.25rem;
 }
-
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 3rem;
@@ -157,7 +173,6 @@ h2 {
   line-height: 2.25rem;
   letter-spacing: 1.4px;
 }
-
 @media screen and (min-width: 768px) {
   h2 {
     font-size: 2.5rem;
@@ -173,12 +188,34 @@ h3 {
   letter-spacing: 5px;
 }
 
+.text--link {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
 .text--white {
   color: #ffffff;
 }
 
 .text-black {
   color: #333136;
+}
+
+.content-wrapper {
+  max-width: 327px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .content-wrapper {
+    max-width: 690px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content-wrapper {
+    max-width: 1111px;
+  }
 }
 
 .btn {
@@ -188,26 +225,137 @@ h3 {
   letter-spacing: 1px;
   display: inline-block;
 }
-
 .btn--white {
   background-color: #ffffff;
   color: #333136;
 }
-
 .btn--white:hover {
   color: #f1f3f5;
   background-color: #ffad9b;
   cursor: pointer;
 }
-
 .btn--peach {
   background-color: #e7816b;
   color: #ffffff;
 }
-
 .btn--peach:hover {
   color: #f1f3f5;
   background-color: #ffad9b;
   cursor: pointer;
 }
+
+.footer {
+  background-color: #1d1c1e;
+  padding-top: 15.8125rem;
+  padding-bottom: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 10.375rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 9rem;
+  }
+}
+.footer__content-wrapper {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__content-wrapper {
+    padding-bottom: 5rem;
+    text-align: left;
+  }
+}
+.footer__logo {
+  padding-bottom: 2rem;
+  line-height: 1;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.footer__logo img {
+  width: 12.625rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+.footer__logo::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #333136;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo::after {
+    content: none;
+  }
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .footer__links {
+    flex-direction: row;
+  }
+}
+.footer__links a:not(:last-child) {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__links a:not(:last-child) {
+    margin-bottom: 0;
+    padding-right: 2.625rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer--top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #333136;
+  }
+}
+.footer__contact {
+  margin-top: 2.5rem;
+  height: 16.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .footer__contact {
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 4.4375rem;
+    height: auto;
+  }
+}
+.footer__icons {
+  width: 11.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__icons svg:hover {
+  cursor: pointer;
+}
+.footer__icons svg:hover path {
+  fill: #ffad9b;
+}
+@media screen and (min-width: 1200px) {
+  .footer__us {
+    margin-left: -8.75rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

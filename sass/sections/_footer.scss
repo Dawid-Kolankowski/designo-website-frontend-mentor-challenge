@@ -1,0 +1,108 @@
+.footer {
+  background-color: $color-black;
+  padding-top: 15.8125rem;
+  padding-bottom: 4rem;
+  @media screen and(min-width:$screen-tablet) {
+    padding-top: 10.375rem;
+  }
+  @media screen and(min-width:$screen-desktop) {
+    padding-top: 9rem;
+  }
+
+  &__content-wrapper {
+    text-align: center;
+    @media screen and(min-width:$screen-tablet) {
+      padding-bottom: 5rem;
+      text-align: left;
+    }
+  }
+  &__logo {
+    padding-bottom: 2rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+
+    & img {
+      width: 12.625rem;
+    }
+    @media screen and(min-width:$screen-tablet) {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    position: relative;
+    &::after {
+      content: '';
+      height: 1px;
+      width: 100%;
+      background-color: $color-dark-grey;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      @media screen and(min-width:$screen-tablet) {
+        content: none;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    color: $color-white;
+    @media screen and(min-width:$screen-tablet) {
+      flex-direction: row;
+    }
+    & a:not(:last-child) {
+      margin-bottom: 2rem;
+      @media screen and(min-width:$screen-tablet) {
+        margin-bottom: 0;
+        padding-right: 2.625rem;
+      }
+    }
+  }
+  &--top {
+    @media screen and(min-width:$screen-tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 2.5rem;
+      border-bottom: 1px solid $color-dark-grey;
+    }
+  }
+
+  &__contact {
+    margin-top: 2.5rem;
+    height: 16.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and(min-width:$screen-tablet) {
+      flex-direction: row;
+      align-items: flex-end;
+      margin-top: 4.4375rem;
+      height: auto;
+    }
+  }
+  &__icons {
+    width: 11.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and(min-width:$screen-tablet) {
+    }
+    & svg:hover {
+      cursor: pointer;
+
+      & path {
+        fill: $color-light-peach;
+      }
+    }
+  }
+
+  &__us {
+    @media screen and(min-width:$screen-desktop) {
+      margin-left: -8.75rem;
+    }
+  }
+}

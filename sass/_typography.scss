@@ -1,4 +1,5 @@
 body {
+  font-family: 'Jost', sans-serif;
   font-weight: $font-rg;
   line-height: 1.625rem;
 }
@@ -30,6 +31,13 @@ h3 {
   font-size: 1.25rem;
   line-height: 1.625rem;
   letter-spacing: 5px;
+}
+
+.text--link {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  letter-spacing: 2px;
+  font-weight: $font-rg;
 }
 
 .text--white {
