@@ -1,0 +1,63 @@
+.traits {
+  &__content-wrapper {
+    text-align: center;
+    margin-bottom: 7.5625rem;
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 4.1875rem;
+      text-align: left;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      margin-bottom: 10rem;
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+    }
+  }
+  &__circlebg {
+    display: inline-block;
+    background: url(./assets/home/desktop/bg-pattern-hero-home.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 3rem;
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 0;
+      margin-right: 3rem;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      margin-bottom: 3rem;
+      margin-right: 0;
+    }
+  }
+  &__card {
+    margin-bottom: 5rem;
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      flex-direction: column;
+    }
+  }
+  &__header {
+    margin-bottom: 2rem;
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 1rem;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__text {
+    @media screen and (min-width: $screen-desktop) {
+      max-width: 21.5rem;
+    }
+  }
+}
+
+// @media screen and (min-width:$screen-tablet){
+
+// }
+// @media screen and (min-width:$screen-desktop){
+
+// }

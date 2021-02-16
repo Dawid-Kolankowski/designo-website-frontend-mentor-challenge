@@ -420,4 +420,75 @@ h3 {
   align-self: center;
 }
 
+.traits__content-wrapper {
+  text-align: center;
+  margin-bottom: 7.5625rem;
+}
+@media screen and (min-width: 768px) {
+  .traits__content-wrapper {
+    margin-bottom: 4.1875rem;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .traits__content-wrapper {
+    margin-bottom: 10rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+}
+.traits__circlebg {
+  display: inline-block;
+  background: url(./assets/home/desktop/bg-pattern-hero-home.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .traits__circlebg {
+    margin-bottom: 0;
+    margin-right: 3rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .traits__circlebg {
+    margin-bottom: 3rem;
+    margin-right: 0;
+  }
+}
+.traits__card {
+  margin-bottom: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .traits__card {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .traits__card {
+    flex-direction: column;
+  }
+}
+.traits__header {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .traits__header {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .traits__header {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .traits__text {
+    max-width: 21.5rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
