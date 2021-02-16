@@ -9,3 +9,13 @@
     max-width: $wrapper-desktop;
   }
 }
+
+.mb-1 {
+  margin-bottom: 6rem;
+  @media screen and(min-width: $screen-tablet) {
+    margin-bottom: 7.5rem;
+  }
+  @media screen and (min-width: $screen-desktop) {
+    margin-bottom: 10rem;
+  }
+}

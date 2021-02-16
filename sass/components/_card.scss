@@ -1,0 +1,52 @@
+.card {
+  text-align: center;
+  background-color: #fdf3f0;
+  border-radius: 0.9375rem;
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+  &:hover {
+    background-color: $color-peach;
+    color: white;
+    cursor: pointer;
+    & h3 {
+      color: white;
+    }
+  }
+  @media screen and (min-width: $screen-tablet) and (max-width: $screen-desktop) {
+    display: flex;
+  }
+  &__image {
+    width: 100%;
+    height: 20rem;
+    @media screen and (min-width: $screen-tablet) and (max-width: $screen-desktop) {
+      width: 50%;
+    }
+  }
+  &__header {
+    color: $color-peach;
+    margin-bottom: 1rem;
+  }
+  &__text {
+    margin: 2rem 1.875rem;
+    @media screen and (min-width: $screen-tablet) and (max-width: $screen-desktop) {
+      margin: auto 1.875rem;
+    }
+  }
+
+  &__divider {
+    @media screen and (min-width: $screen-desktop) {
+      margin-left: 1.875rem;
+      margin-right: 1.875rem;
+    }
+  }
+  &__container {
+    @media screen and (min-width: $screen-desktop) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 7.5rem;
+      & > div {
+        flex: 0 0 31.5%;
+      }
+    }
+  }
+}
