@@ -420,6 +420,25 @@ h3 {
   align-self: center;
 }
 
+.traits {
+  position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .traits::after {
+    content: "";
+    position: absolute;
+    height: 37.125rem;
+    width: 62.875rem;
+    background: url(./assets/shared/desktop/bg-pattern-leaf.svg);
+    background-size: cover;
+    transform: rotate(180deg);
+    background-position: bottom 0 left 0;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 7.75rem;
+    z-index: -1;
+  }
+}
 .traits__content-wrapper {
   text-align: center;
   margin-bottom: 7.5625rem;
