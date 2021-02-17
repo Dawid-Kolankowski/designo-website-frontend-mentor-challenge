@@ -741,6 +741,65 @@ h3 {
   }
 }
 
+.title {
+  text-align: center;
+}
+.title__content-wrapper {
+  background: #e7816b;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .title__content-wrapper {
+    max-width: 100%;
+    padding: 105px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title__content-wrapper {
+    border-radius: 0.9375rem;
+    padding: 4rem 9.25rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title__content-wrapper {
+    border-radius: 0.9375rem;
+    padding: 4rem 21.875rem;
+  }
+}
+.title__content-wrapper:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(./assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg);
+  background-position: top 0 right 0;
+  top: 0;
+  right: 0;
+}
+@media screen and (min-width: 768px) {
+  .title__content-wrapper:after {
+    background: url(./assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg);
+    background-position: top 50% left 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title__content-wrapper:after {
+    background-position: top 50% right 0;
+    background-repeat: no-repeat;
+  }
+}
+.title__text {
+  position: relative;
+  z-index: 5;
+}
+.title__text > h1 {
+  margin-bottom: 1.5rem;
+}
+
 .traits {
   position: relative;
 }
