@@ -33,7 +33,11 @@
   &__links {
     display: flex;
     flex-direction: column;
-    color: $color-white;
+
+    & > a {
+      color: white;
+    }
+
     @media screen and(min-width:$screen-tablet) {
       flex-direction: row;
     }
