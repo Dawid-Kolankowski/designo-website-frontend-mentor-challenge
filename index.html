@@ -9,9 +9,46 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script defer src="./header.js"></script>
   </head>
   <body>
     <main>
+      <header class="header">
+        <div class="overlay"></div>
+        <nav class="header__nav content-wrapper">
+          <a href="/" class="header__logo">
+            <img src="assets/shared/desktop/logo-dark.png" alt="logo" />
+          </a>
+
+          <div id="btnHamburger" class="header__toggle hide-for-tablet">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__links hide-for-mobile">
+            <a href="./about.html">OUR COMPANY</a
+            ><a href="./locations.html">LOCATIONS</a
+            ><a href="./contact.html">CONTACT</a>
+          </div>
+        </nav>
+        <div class="header__menu hide-for-tablet">
+          <a href="./about.html">OUR COMPANY</a>
+          <a href="./locations.html">LOCATIONS</a>
+          <a href="./contact.html">CONTACT</a>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="content-wrapper">
+          <h1>Award-winning custom designs and digital branding solutions</h1>
+          <p>
+            With over 10 years in the industry, we are experienced in creating
+            fully responsive websites, apps, and engaging brand experiences.
+            Find out more about our services.
+          </p>
+          <a href="./about.html" class="btn btn--white">LEARN MORE</a>
+        </div>
+      </section>
+
       <section class="work content-wrapper text--white mb-1">
         <div class="work__card work__card--web work__card--big">
           <div class="work__text">

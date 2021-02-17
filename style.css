@@ -233,6 +233,10 @@ h3 {
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .btn {
   border-radius: 0.5rem;
   padding: 1.125rem 1.5625rem 1rem;
@@ -619,6 +623,118 @@ h3 {
   padding-left: 0.5rem;
 }
 
+.header {
+  z-index: 10;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    position: relative;
+  }
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .header__nav {
+    padding: 2.1875rem 1.5rem;
+    max-width: 100%;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__nav {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}
+.header__logo {
+  display: inline-block;
+  height: 1.6875rem;
+}
+.header__logo img {
+  height: 1.6875rem;
+}
+@media screen and (min-width: 768px) {
+  .header .hide-for-tablet {
+    display: none;
+  }
+}
+.header__toggle:hover {
+  cursor: pointer;
+}
+.header__toggle > span {
+  display: block;
+  width: 24px;
+  height: 4px;
+  background-color: #1d1c1e;
+  transition: all 300ms ease-in-out;
+  transform-origin: 1px 2px;
+}
+.header__toggle > span:not(:last-child) {
+  margin-bottom: 4px;
+}
+@media screen and (max-width: 768px) {
+  .header.open .header__toggle > span:first-child {
+    transform: rotate(45deg);
+  }
+  .header.open .header__toggle > span:nth-child(2) {
+    opacity: 0;
+  }
+  .header.open .header__toggle > span:last-child {
+    transform: rotate(-45deg);
+  }
+  .header.open .header__menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header .hide-for-mobile {
+    display: none;
+  }
+}
+.header__links a {
+  margin-left: 2.625rem;
+}
+.header__menu {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1d1c1e;
+  padding: 1.625rem;
+  z-index: 100;
+  display: none;
+}
+.header__menu a {
+  display: block;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .open .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -5;
+  }
+}
+
+.sticky {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
 .traits {
   position: relative;
 }
@@ -708,6 +824,10 @@ h3 {
   .traits__text {
     max-width: 21.5rem;
   }
+}
+
+.hero {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

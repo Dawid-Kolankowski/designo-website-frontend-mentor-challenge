@@ -12,7 +12,31 @@
   </head>
   <body>
     <main>
-      <div class="cta">
+      <header class="header">
+        <div class="overlay"></div>
+        <nav class="header__nav content-wrapper">
+          <a href="/" class="header__logo">
+            <img src="assets/shared/desktop/logo-dark.png" alt="logo" />
+          </a>
+
+          <div id="btnHamburger" class="header__toggle hide-for-tablet">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__links hide-for-mobile">
+            <a href="./about.html">OUR COMPANY</a
+            ><a href="./locations.html">LOCATIONS</a
+            ><a href="./contact.html">CONTACT</a>
+          </div>
+        </nav>
+        <div class="header__menu hide-for-tablet">
+          <a href="./about.html">OUR COMPANY</a>
+          <a href="./locations.html">LOCATIONS</a>
+          <a href="./contact.html">CONTACT</a>
+        </div>
+      </header>
+      <section class="cta">
         <div class="content-wrapper cta__card">
           <div>
             <h1 class="cta__header text--white">
@@ -27,7 +51,7 @@
             >GET IN TOUCH</a
           >
         </div>
-      </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="content-wrapper footer__content-wrapper">
