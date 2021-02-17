@@ -805,12 +805,13 @@ h3 {
 .countries {
   text-align: center;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 1200px) {
   .countries {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 .countries__image {
@@ -821,6 +822,7 @@ h3 {
 }
 .countries__card {
   margin-bottom: 3rem;
+  width: 350px;
 }
 @media screen and (min-width: 1200px) {
   .countries__card {
