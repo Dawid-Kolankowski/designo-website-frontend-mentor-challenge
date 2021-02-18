@@ -750,7 +750,22 @@ h3 {
 }
 
 .title {
+  position: relative;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .title::after {
+    content: "";
+    position: absolute;
+    height: 37.125rem;
+    width: 62.875rem;
+    background: url(./assets/shared/desktop/bg-pattern-leaf.svg);
+    background-position: bottom 0 left 0;
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: -29.25rem;
+    z-index: -1;
+  }
 }
 .title__content-wrapper {
   background: #e7816b;
@@ -776,7 +791,7 @@ h3 {
     padding: 4rem 21.875rem;
   }
 }
-.title__content-wrapper:after {
+.title__content-wrapper::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -787,7 +802,7 @@ h3 {
   right: 0;
 }
 @media screen and (min-width: 768px) {
-  .title__content-wrapper:after {
+  .title__content-wrapper::after {
     background: url(./assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg);
     background-position: top 50% left 0;
     right: 0;
@@ -795,7 +810,7 @@ h3 {
   }
 }
 @media screen and (min-width: 1200px) {
-  .title__content-wrapper:after {
+  .title__content-wrapper::after {
     background-position: top 50% right 0;
     background-repeat: no-repeat;
   }
@@ -809,13 +824,34 @@ h3 {
 }
 
 .countries {
+  position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .countries::after {
+    content: "";
+    position: absolute;
+    height: 37.125rem;
+    width: 62.875rem;
+    background: url(./assets/shared/desktop/bg-pattern-leaf.svg);
+    background-position: bottom 0 left 0;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 11.375rem;
+    z-index: -1;
+  }
+}
+.countries--contact::after {
+  top: 5.625rem;
+}
+.countries__content-wrapper {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 @media screen and (min-width: 1200px) {
-  .countries {
+  .countries__content-wrapper {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -847,8 +883,7 @@ h3 {
     content: "";
     position: absolute;
     height: 37.125rem;
-    width: 60%;
-    min-width: 62.875rem;
+    width: 62.875rem;
     background: url(./assets/shared/desktop/bg-pattern-leaf.svg);
     transform: rotate(180deg);
     background-position: bottom 0 left 0;
@@ -930,6 +965,23 @@ h3 {
   }
 }
 
+.hero {
+  position: relative;
+}
+@media screen and (min-width: 1200px) {
+  .hero::after {
+    content: "";
+    position: absolute;
+    height: 37.125rem;
+    width: 62.875rem;
+    background: url(./assets/shared/desktop/bg-pattern-leaf.svg);
+    background-position: bottom 0 left 0;
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: -17.125rem;
+    z-index: -1;
+  }
+}
 .hero__content-wrapper {
   background-color: #e7816b;
   min-height: 52.6875rem;
@@ -953,7 +1005,7 @@ h3 {
     min-height: 40rem;
   }
 }
-.hero__content-wrapper:after {
+.hero__content-wrapper::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -965,7 +1017,7 @@ h3 {
   background-position: top 50% left 0;
 }
 @media screen and (min-width: 768px) {
-  .hero__content-wrapper:after {
+  .hero__content-wrapper::after {
     background-position: top 50% right 0;
     right: -7.59375rem;
     left: auto;
@@ -973,7 +1025,7 @@ h3 {
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero__content-wrapper:after {
+  .hero__content-wrapper::after {
     background-position: top 0 right 0;
     bottom: 0;
   }
@@ -1135,6 +1187,18 @@ h3 {
   }
 }
 
+.about::after {
+  content: "";
+  position: absolute;
+  height: 37.125rem;
+  width: 62.875rem;
+  background: url(./assets/shared/desktop/bg-pattern-leaf.svg);
+  background-position: bottom 0 left 0;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 29.6875rem;
+  z-index: -1;
+}
 @media screen and (min-width: 768px) {
   .about {
     border-radius: 0.9375rem;

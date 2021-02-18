@@ -1,11 +1,36 @@
 .countries {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @media screen and (min-width: $screen-desktop) {
-    flex-direction: row;
-    justify-content: space-between;
+  position: relative;
+  @media screen and(min-width: $screen-desktop) {
+    &::after {
+      content: '';
+      position: absolute;
+      height: 37.125rem;
+      width: 62.875rem;
+      background: url(./assets/shared/desktop/bg-pattern-leaf.svg);
+
+      background-position: bottom 0 left 0;
+      background-repeat: no-repeat;
+      right: 0;
+      top: 11.375rem;
+      z-index: -1;
+    }
+  }
+  &--contact {
+    &::after {
+      top: 5.625rem;
+    }
+  }
+  &__content-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    @media screen and (min-width: $screen-desktop) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
   &__image {
     background-image: url(./assets/shared/desktop/bg-pattern-small-circle.svg);

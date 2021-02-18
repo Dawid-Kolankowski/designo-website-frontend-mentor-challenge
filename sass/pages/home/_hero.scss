@@ -1,4 +1,21 @@
 .hero {
+  position: relative;
+  @media screen and (min-width: $screen-desktop) {
+    &::after {
+      content: '';
+      position: absolute;
+      height: 37.125rem;
+      width: 62.875rem;
+      background: url(./assets/shared/desktop/bg-pattern-leaf.svg);
+
+      background-position: bottom 0 left 0;
+      background-repeat: no-repeat;
+
+      left: 0;
+      bottom: -17.125rem;
+      z-index: -1;
+    }
+  }
   &__content-wrapper {
     background-color: $color-peach;
     min-height: 52.6875rem;
@@ -15,7 +32,7 @@
     @media screen and(min-width:$screen-desktop) {
       min-height: 40rem;
     }
-    &:after {
+    &::after {
       content: '';
       position: absolute;
       height: 100%;
