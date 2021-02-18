@@ -1070,7 +1070,9 @@ h3 {
 }
 @media screen and (min-width: 1200px) {
   .locations__text {
+    background-image: url(./assets/shared/desktop/bg-pattern-three-circles.svg);
     width: 65.7%;
+    padding-right: 11.5625rem;
   }
 }
 @media screen and (max-width: 768px) {

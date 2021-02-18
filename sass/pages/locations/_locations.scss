@@ -30,7 +30,9 @@
       border-radius: 0.9375rem;
     }
     @media screen and(min-width:$screen-desktop) {
+      background-image: url(./assets/shared/desktop/bg-pattern-three-circles.svg);
       width: 65.7%;
+      padding-right: 11.5625rem;
     }
   }
   &__location {
