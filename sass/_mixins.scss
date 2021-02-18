@@ -1,11 +1,11 @@
-@mixin workImages($link) {
-  background-image: url('./assets/home/mobile/#{$link}.jpg');
+@mixin Images($folder, $link) {
+  background-image: url('./assets/#{$folder}/mobile/#{$link}.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (min-width: 768px) {
-    background-image: url('./assets/home/tablet/#{$link}.jpg');
+    background-image: url('./assets/#{$folder}/tablet/#{$link}.jpg');
   }
   @media screen and (min-width: 1200px) {
-    background-image: url('./assets/home/desktop/#{$link}.jpg');
+    background-image: url('./assets/#{$folder}/desktop/#{$link}.jpg');
   }
 }

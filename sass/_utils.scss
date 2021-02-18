@@ -2,7 +2,7 @@
   max-width: $wrapper-mobile;
   margin: 0 auto;
   &-mobilefull {
-    @media screen and (max-width: $screen-tablet) {
+    @media screen and (max-width: 767px) {
       max-width: 100%;
       margin: 0;
     }

@@ -206,7 +206,7 @@ h3 {
   max-width: 327px;
   margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .content-wrapper-mobilefull {
     max-width: 100%;
     margin: 0;
@@ -647,7 +647,7 @@ h3 {
   position: relative;
   z-index: 30;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header__nav {
     padding: 2.1875rem 1.5rem;
     max-width: 100%;
@@ -758,7 +758,7 @@ h3 {
   position: relative;
   z-index: 1;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .title__content-wrapper {
     max-width: 100%;
     padding: 105px 24px;
@@ -828,11 +828,11 @@ h3 {
 }
 .countries__card {
   margin-bottom: 3rem;
-  width: 350px;
 }
 @media screen and (min-width: 1200px) {
   .countries__card {
     margin-bottom: 0;
+    width: 350px;
   }
 }
 .countries__header {
@@ -936,7 +936,7 @@ h3 {
   overflow: hidden;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hero__content-wrapper {
     width: 100%;
     max-width: 100%;
@@ -1113,7 +1113,7 @@ h3 {
 .locations__map--canada {
   background-image: url(./assets/locations/tablet/image-map-canada.png);
 }
-@media screen and (max-width: 768px), screen and (min-width: 1200px) {
+@media screen and (max-width: 767px), screen and (min-width: 1200px) {
   .locations__map--canada {
     background-image: url(./assets/locations/desktop/image-map-canada.png);
   }
@@ -1121,7 +1121,7 @@ h3 {
 .locations__map--australia {
   background-image: url(./assets/locations/tablet/image-map-australia.png);
 }
-@media screen and (max-width: 768px), screen and (min-width: 1200px) {
+@media screen and (max-width: 767px), screen and (min-width: 1200px) {
   .locations__map--australia {
     background-image: url(./assets/locations/desktop/image-map-australia.png);
   }
@@ -1129,10 +1129,155 @@ h3 {
 .locations__map--uk {
   background-image: url(./assets/locations/tablet/image-map-uk.png);
 }
-@media screen and (max-width: 768px), screen and (min-width: 1200px) {
+@media screen and (max-width: 767px), screen and (min-width: 1200px) {
   .locations__map--uk {
     background-image: url(./assets/locations/desktop/image-map-united-kingdom.png);
   }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    border-radius: 0.9375rem;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about--hero {
+    margin-bottom: 7.5rem;
+  }
+}
+.about__image {
+  width: 100%;
+  height: 20rem;
+}
+@media (min-width: 1200px) {
+  .about__image {
+    height: auto;
+    flex: 1 1 0px;
+  }
+}
+.about__image--hero {
+  background-image: url("./assets/about/mobile/image-about-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .about__image--hero {
+    background-image: url("./assets/about/tablet/image-about-hero.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__image--hero {
+    background-image: url("./assets/about/desktop/image-about-hero.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .about__image--hero {
+    order: 2;
+  }
+}
+.about__image--deal {
+  background-image: url("./assets/about/mobile/image-real-deal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .about__image--deal {
+    background-image: url("./assets/about/tablet/image-real-deal.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__image--deal {
+    background-image: url("./assets/about/desktop/image-real-deal.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .about__image--deal {
+    order: 2;
+  }
+}
+.about__image--talent {
+  background-image: url("./assets/about/mobile/image-world-class-talent.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .about__image--talent {
+    background-image: url("./assets/about/tablet/image-world-class-talent.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__image--talent {
+    background-image: url("./assets/about/desktop/image-world-class-talent.jpg");
+  }
+}
+.about__text {
+  padding: 4.25rem 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .about__text {
+    padding: 4.25rem 3.625rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__text {
+    text-align: left;
+    flex: 1 1 0px;
+  }
+}
+.about__text--hero {
+  background-color: #e7816b;
+  color: #ffffff;
+  background-image: url(./assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+  background-position: top -8.75rem right 0;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .about__text--hero {
+    background-image: url(./assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+    background-position: bottom 6.3125rem right 10.625rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__text--hero {
+    background-position: bottom 0 right 0;
+    padding: 135px 5.9375rem;
+  }
+}
+.about__text--details {
+  background-color: #fdf3f0;
+  background-image: url(./assets/shared/desktop/bg-pattern-three-circles.svg);
+  background-position: top 0 left 0;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 768px) {
+  .about__text--details {
+    background-image: url(./assets/shared/desktop/bg-pattern-three-circles.svg);
+    background-position: bottom 2.75rem left 5.875rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__text--details-right {
+    background-image: url(./assets/shared/desktop/bg-pattern-two-circles.svg);
+    background-position: bottom 0 left 0 !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__text--details {
+    background-position: bottom 0 left -9.125rem;
+    padding: 9.625rem 7rem;
+  }
+}
+.about__text--details > h1 {
+  color: #e7816b;
+}
+.about__text > h1 {
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

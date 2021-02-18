@@ -66,21 +66,21 @@
       }
     }
     &--canada {
-      @media screen and (max-width: $screen-tablet),
+      @media screen and (max-width: 767px),
         screen and(min-width:$screen-desktop) {
         background-image: url(./assets/locations/desktop/image-map-canada.png);
       }
       background-image: url(./assets/locations/tablet/image-map-canada.png);
     }
     &--australia {
-      @media screen and (max-width: $screen-tablet),
+      @media screen and (max-width: 767px),
         screen and(min-width:$screen-desktop) {
         background-image: url(./assets/locations/desktop/image-map-australia.png);
       }
       background-image: url(./assets/locations/tablet/image-map-australia.png);
     }
     &--uk {
-      @media screen and (max-width: $screen-tablet),
+      @media screen and (max-width: 767px),
         screen and(min-width:$screen-desktop) {
         background-image: url(./assets/locations/desktop/image-map-united-kingdom.png);
       }

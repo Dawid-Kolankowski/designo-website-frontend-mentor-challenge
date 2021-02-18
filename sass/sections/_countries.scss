@@ -15,10 +15,10 @@
   }
   &__card {
     margin-bottom: 3rem;
-    width: 350px;
 
     @media screen and (min-width: $screen-desktop) {
       margin-bottom: 0;
+      width: 350px;
     }
   }
   &__header {

@@ -51,14 +51,14 @@
     }
 
     &--web {
-      @include workImages(image-web-design);
+      @include Images(home, image-web-design);
     }
     &--app {
-      @include workImages(image-app-design);
+      @include Images(home, image-app-design);
     }
 
     &--graphic {
-      @include workImages(image-graphic-design);
+      @include Images(home, image-graphic-design);
     }
     &--big {
       @media screen and (min-width: $screen-desktop) {
