@@ -7,6 +7,7 @@
     @media screen and (max-width: $screen-tablet) {
       width: 100%;
       max-width: 100%;
+      border-radius: 0;
     }
     @media screen and(min-width:$screen-tablet) {
       border-radius: 0.9375rem;

@@ -1,0 +1,88 @@
+.locations {
+  &__card {
+    margin-bottom: 2.5rem;
+    @media screen and(min-width:$screen-tablet) {
+      margin-bottom: 7.5rem;
+    }
+    @media screen and(min-width:$screen-desktop) {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__text {
+    background-color: #fdf3f0;
+    text-align: center;
+    padding: 5rem 0;
+    background-image: url(./assets/shared/desktop/bg-pattern-three-circles.svg);
+    background-position: top 0 left 0;
+    background-repeat: no-repeat;
+    & > h1 {
+      color: $color-peach;
+      margin-bottom: 1.5rem;
+    }
+
+    @media screen and (min-width: $screen-tablet) {
+      background-image: url(./assets/shared/desktop/bg-pattern-two-circles.svg);
+      background-position: bottom 0 left 0;
+      text-align: left;
+      padding: 5.5rem 10.0625rem 5.5rem 4.6875rem;
+      border-radius: 0.9375rem;
+    }
+    @media screen and(min-width:$screen-desktop) {
+      width: 65.7%;
+    }
+  }
+  &__location {
+    @media screen and (max-width: $screen-tablet) {
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__contact {
+    @media screen and (min-width: $screen-tablet) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__map {
+    width: 100%;
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (min-width: $screen-tablet) {
+      border-radius: 0.9375rem;
+      margin-bottom: 1.5rem;
+    }
+    @media screen and (min-width: $screen-desktop) {
+      border-radius: 0.9375rem;
+      margin: 0;
+      width: 31.5%;
+    }
+    &--right {
+      @media screen and(min-width: $screen-desktop) {
+        order: 2;
+      }
+    }
+    &--canada {
+      @media screen and (max-width: $screen-tablet),
+        screen and(min-width:$screen-desktop) {
+        background-image: url(./assets/locations/desktop/image-map-canada.png);
+      }
+      background-image: url(./assets/locations/tablet/image-map-canada.png);
+    }
+    &--australia {
+      @media screen and (max-width: $screen-tablet),
+        screen and(min-width:$screen-desktop) {
+        background-image: url(./assets/locations/desktop/image-map-australia.png);
+      }
+      background-image: url(./assets/locations/tablet/image-map-australia.png);
+    }
+    &--uk {
+      @media screen and (max-width: $screen-tablet),
+        screen and(min-width:$screen-desktop) {
+        background-image: url(./assets/locations/desktop/image-map-united-kingdom.png);
+      }
+      background-image: url(./assets/locations/tablet/image-map-uk.png);
+    }
+  }
+}

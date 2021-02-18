@@ -206,6 +206,12 @@ h3 {
   max-width: 327px;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .content-wrapper-mobilefull {
+    max-width: 100%;
+    margin: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .content-wrapper {
     max-width: 690px;
@@ -934,6 +940,7 @@ h3 {
   .hero__content-wrapper {
     width: 100%;
     max-width: 100%;
+    border-radius: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1022,6 +1029,107 @@ h3 {
     right: 0;
     bottom: -15.125rem;
     transform: translate(0, 0);
+  }
+}
+
+.locations__card {
+  margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .locations__card {
+    margin-bottom: 7.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .locations__card {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.locations__text {
+  background-color: #fdf3f0;
+  text-align: center;
+  padding: 5rem 0;
+  background-image: url(./assets/shared/desktop/bg-pattern-three-circles.svg);
+  background-position: top 0 left 0;
+  background-repeat: no-repeat;
+}
+.locations__text > h1 {
+  color: #e7816b;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .locations__text {
+    background-image: url(./assets/shared/desktop/bg-pattern-two-circles.svg);
+    background-position: bottom 0 left 0;
+    text-align: left;
+    padding: 5.5rem 10.0625rem 5.5rem 4.6875rem;
+    border-radius: 0.9375rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .locations__text {
+    width: 65.7%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .locations__location {
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .locations__contact {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.locations__map {
+  width: 100%;
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .locations__map {
+    border-radius: 0.9375rem;
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .locations__map {
+    border-radius: 0.9375rem;
+    margin: 0;
+    width: 31.5%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .locations__map--right {
+    order: 2;
+  }
+}
+.locations__map--canada {
+  background-image: url(./assets/locations/tablet/image-map-canada.png);
+}
+@media screen and (max-width: 768px), screen and (min-width: 1200px) {
+  .locations__map--canada {
+    background-image: url(./assets/locations/desktop/image-map-canada.png);
+  }
+}
+.locations__map--australia {
+  background-image: url(./assets/locations/tablet/image-map-australia.png);
+}
+@media screen and (max-width: 768px), screen and (min-width: 1200px) {
+  .locations__map--australia {
+    background-image: url(./assets/locations/desktop/image-map-australia.png);
+  }
+}
+.locations__map--uk {
+  background-image: url(./assets/locations/tablet/image-map-uk.png);
+}
+@media screen and (max-width: 768px), screen and (min-width: 1200px) {
+  .locations__map--uk {
+    background-image: url(./assets/locations/desktop/image-map-united-kingdom.png);
   }
 }
 
